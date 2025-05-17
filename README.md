@@ -8,6 +8,11 @@ ASM sourcecode for Game Boy Tiny Toon Adventures 2 (USA/Europe) restoration mod.
 
 Making the game more enjoyable and less frustrating.
 
+![Title screen with password menu](screenshots/title_screen.png)
+![Title screen with password feature](screenshots/screenshot0.png)
+![Game over screen with password feature](screenshots/screenshot1.png)
+![Extra life earnt in minigame](screenshots/screenshot2.png)
+
 Read more about the regional differences at [The Cutting Room Floor](https://tcrf.net/Tiny_Toon_Adventures_2:_Montana%27s_Movie_Madness#Regional_Differences).
 
 
