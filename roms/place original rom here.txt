@@ -1,0 +1,4 @@
+place original "Tiny Toon Adventures 2 - Montana's Movie Madness (USA, Europe).gb" rom as "tiny_toon_2_en.gb"
+CRC32: c5c7868d
+MD5:   7aa389f71808dc989a38b41009a32851
+SHA1:  b76aa64cc4123b7900569ff9db680935198db73f

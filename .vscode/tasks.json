@@ -1,0 +1,32 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Assemble",
+			"type": "shell",
+			"command": "./assemble.sh",
+			"windows":{
+				"command": "./assemble.bat"
+			},
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": ["$rgbdserror", "$rgbdslinkerror"]
+		},
+		{
+			"label": "Execute",
+			"type": "process",
+			"command": "../_resources/bgb/bgb64.exe",
+			"args": [
+				"-r",
+				"./roms/tiny_toon_2_en_restored.gb"
+			],
+		},
+		{
+			"label": "Clean",
+			"type": "shell",
+			"command": "./clean.bat"
+		}
+	]
+}
