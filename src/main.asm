@@ -9,11 +9,12 @@ INCLUDE "./ram.asm"
 INCLUDE "./useful_subroutines.asm"
 INCLUDE "./bank1.asm"
 INCLUDE "./bank2.asm"
+INCLUDE "./bank3.asm"
 INCLUDE "./bank4.asm"
 INCLUDE "./bank5.asm"
 INCLUDE "./bank6.asm"
 INCLUDE "./bank7.asm"
-INCLUDE "./balancing.asm"
+INCLUDE "./balancing.asm" ;edit this file if you want to choose difficulty tweaks
 
 
 
