@@ -5,6 +5,7 @@ ASM sourcecode for Game Boy Tiny Toon Adventures 2 (USA/Europe) restoration mod.
 - unlimited continues
 - earn an extra life after winning a minigame
 - earn an extra life after reaching 2000 points (instead of 3000)
+- bosses health points reduced by one
 
 Making the game more enjoyable and less frustrating.
 
