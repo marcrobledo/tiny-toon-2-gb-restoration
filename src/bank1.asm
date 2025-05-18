@@ -4,7 +4,7 @@
 ; BANK 1
 ; The free space in this bank will be used to store part of the new tileset.
 
-SECTION "Bank 1 - Free space", ROMX[$7faa], BANK[1]
+SECTION "Bank 1 - Free space", ROMX[$7fab], BANK[1]
 load_password_tileset_selector:
 	ld		hl, _tileset_password_selector
 	ld		de, $8010
