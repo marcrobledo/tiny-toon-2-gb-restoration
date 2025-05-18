@@ -1,4 +1,7 @@
 # Tiny Toon Adventures 2 - Montana's Movie Madness Restoration Mod
+
+![Promotional banner](screenshots/promocard.png)
+
 ASM sourcecode for Game Boy Tiny Toon Adventures 2 (USA/Europe) restoration mod. The aim of this project is to restore some features the Japanese version had:
 
 - password function
