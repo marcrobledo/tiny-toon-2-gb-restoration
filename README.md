@@ -29,12 +29,13 @@ That SNES game still had the password feature coded in. However, Tiny Toon 2 for
 
 It sounded easy at first, but due to how the Game Boy ROM banks work, there wasn't enough space. So I decided to just translate the Japanese game into English, which sounded easier too, but...
 
-The English texts were much longer than the Japanese ones, so they didn't fit unless I doubled the ROM size. But **I love challenges**! So I finally went for the hardest route: restoring the password feature in the English ROM while keeping the game size below the original 128kb.
+The English texts were much longer than the Japanese ones, so they didn't fit unless I doubled the ROM size. I also toyed with the idea of adding SRAM support (thus saving features) with a stage select option, but these also required some extra space.<br/>
+But **I love challenges**! So I finally went for the hardest route: restoring the password feature in the English ROM while keeping the game size below the original 128kb.
 
 Long story short: I achieved it. But it was hard as hell. The free space is quite limited and I had to rearrange things and do heavy optimizations to the original code to save some space and make room for the new code.
 
 So here it is: a hack nobody asked for, but that I am proud of ^_^<br/>
-Enjoy this cute lil platformer in English and with passwords!
+Enjoy this cute lil platformer in its best version in english!
 
 
 
