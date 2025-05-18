@@ -9,6 +9,11 @@ _menu_variables:
 .password_digit3: DB
 .password_digit_selector: DB
 
+SECTION "RAM - Health", WRAMX[$dd54], BANK[1]
+_health:
+SECTION "RAM - Boss health", WRAM0[$c106]
+_health_boss:
+
 SECTION "RAM - Hard mode", WRAMX[$dd59], BANK[1]
 _hard_mode:
 SECTION "RAM - Continues", WRAMX[$dd5e], BANK[1]

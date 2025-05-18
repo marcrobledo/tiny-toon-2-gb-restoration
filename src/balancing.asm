@@ -4,6 +4,7 @@
 ; Code replacements for:
 ; - set extra life requirements from 3000 to 2000
 ; - earn an extra life instead of a continue after winning a minigame
+; - decrease boss health by one
 
 ;EXTRA LIFE REQUIREMENTS DECREASE (from 3000 points to 2000)
 SECTION "Set initial extra life digit (title screen)", ROMX[$40ef], BANK[5]
@@ -49,3 +50,29 @@ REPT 4
 ENDR
 SECTION "Extra continue dialogue after winning minigame (END)", ROMX[$769c], BANK[2]
 DB $c2
+
+
+
+
+
+
+
+;DECREASE BOSS LIFE BY ONE
+SECTION "Bank 2 - Initialize boss health", ROMX[$716b], BANK[2]
+initialize_boss_health:
+	;ld		bc, $a003
+	ld		bc, $8002 ;b seems to be used for the filling health animation
+	ld		a, [_hard_mode]
+	or		a
+	jr		z, .set_boss_health
+	;ld		bc, $e005
+	ld		bc, $c004 ;b seems to be used for the filling health animation
+.set_boss_health:
+	ld		a, c
+	ld		[_health_boss], a
+	;...
+SECTION "Bank 1 - Boss health bars", ROMX[$6b71], BANK[1]
+DW $9fce
+;DB $ef, $ef, $ef, $ff
+DB $ef, $ef, $ff, $ff ;drawn when defeating a boss, both in normal/hard
+;...
