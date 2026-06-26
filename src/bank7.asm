@@ -103,9 +103,26 @@ check_password:
 	ldh		[_extra_life_digit], a
 	ld		[_lives], a
 
-	ld		[_menu_variables.current_option], a ;setting bit1=1, forces to play the next stage cutscene
+	;v1.1 fix - STUDIO cutscene fix
+	;ld		a, [_current_stage]
+	;cp		4
+	;call		z, studio_cutscene_fix
+
+	;ld		a, 2
+	;ld		[_menu_variables.current_option], a ;setting this to 2 -> plays cutcene
 	jp		increase_menu_temp_variable1
 
+/*
+studio_cutscene_fix:
+	;this code should go in bank 0
+	;it seems to fix graphics in STUDIO cutscene, however, music is muted
+	call	vram_empty_all
+	call	$0b3d ;load buster tileset
+	call	$04eb ;reset window
+	call	$0767 ;load theater tileset and map
+	call	$098b ;load band aid map
+	ret
+*/
 
 
 
